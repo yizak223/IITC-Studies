@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCurrentTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        return `${hours}:${minutes}:${seconds}`;
+        }
+
+        
+
+        var number = Math.floor(Math.random()*100)
+        console.log(number);
+        var user=+prompt('enter');
+        if(user>number)
+            {
+                console.log('the num is bigger');
+            }
+            else if(user<number) 
+            {
+                console.log('the num is smallest');
+            }
+        var startTime = new Date();
+        var i=1;
+        while(number!=user)
+        {    
+            var user=+prompt('enter');
+            if(user>number)
+            {
+                console.log('the num is bigger');
+            }
+            else if(user<number) 
+            {
+                console.log('the num is smallest');
+            }
+            i++
+        }
+        var endTime = new Date();
+        var timeDifference = endTime - startTime;
+        var seconds = Math.floor(timeDifference / 1000);
+        console.log("YOUR NUMBAR GUESS"+i);
+        console.log('you played: '+seconds+ ' seconds');
+        
+    // let secretNumber;
+    // let startTime;
+    // let endTime;
+
+    // function startGame() {
+    //     // Generate a random secret number between 1 and 100
+    //     secretNumber = Math.floor(Math.random() * 100) + 1;
+
+    //     // Record the start time
+    //     startTime = new Date();
+        
+    //     // Start the game logic
+    //     // For example, ask the user for input and process their guesses
+    //     }
+
+    // function endGame() {
+    //     // Record the end time
+    //     endTime = new Date();
+        
+    //     // Calculate the time difference in milliseconds
+    //     const timeDifference = endTime - startTime;
+
+    //     // Convert the time difference to seconds
+    //     const seconds = Math.floor(timeDifference / 1000);
+
+    //     console.log(`Congratulations! You guessed the number in ${seconds} seconds.`);
+    //     }
+
+    // // Call startGame() to begin the game
+    // startGame();
+
+        
+    </script>
+</body>
+</html>

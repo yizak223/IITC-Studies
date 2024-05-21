@@ -1,0 +1,86 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.firstSectionOfThePage{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@keyframes scroll {
+    0%{
+        background-image: url(images/homePage1.jpg);
+    }
+    25%{
+        background-image: url(images/homePage2.jpg);
+    }
+    50%{
+        background-image: url(images/homePage3.jpg);
+    }
+    75%{
+        background-image: url(images/homePage6.jpg);
+    }
+    100%{
+        background-image: url(images/homePage5.webp);
+    }
+}
+.scrollImages{
+
+    border: solid rgb(255, 58, 58);
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 2px #2600ff;
+    background-color: #877ce6;
+    background-image: url(images/homePage1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: scroll 15s alternate-reverse infinite;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #877ce6;
+    text-shadow: 15px 15px 20px #2600ff;
+  
+}
+
+@media screen and (max-width:600px) {
+    body{
+        grid-template-rows: 10vh 60vh 10vh 10vh 10vh;
+    }
+    main{
+         height: 80vh;
+        background-size: 100% 80vh;
+    }
+    .firstSectionOfThePage{
+
+    flex-direction: column;
+    text-align: center;
+    }
+    .scrollImages{
+    height: 60vh;
+    width: 90vw;
+    }
+}
+  
+
+@media screen and (min-width:601px) {
+   body{
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    }
+    main{
+        height: 60vh;
+        background-size: 100% 60vh;
+    }
+    .firstSectionOfThePage{
+    align-items: center;
+    }
+    .scrollImages{
+        height: 50vh;
+        width: 40vw;
+    }
+}

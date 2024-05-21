@@ -1,0 +1,26 @@
+
+.squareOut{
+    height: 200px;
+    width: 200px;
+    border: solid;
+}
+.squareIn{
+    height: 50%;
+    width: 50%;
+    border: solid;
+    animation: moveInside 5s   infinite ;
+}
+@keyframes moveInside{
+    0%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(100px,0px);
+    }
+    50%{
+        transform: translate(100px,100px);
+    }
+    100%{
+        transform: translate(0px,100px);
+    }
+}

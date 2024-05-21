@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    height: 200px;
+   border: solid;
+    transition: 5s;
+}
+div:hover{
+   background: conic-gradient(red,blue,yellow,green,pink,rgb(6, 240, 197))
+}
+section{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+
+}
+section:hover{
+    animation: rainbow 10s reverse;
+}
+@keyframes rainbow{
+    0%{background-color: red;}
+    25%{background-color: green;}
+    50%{background-color: blue;}
+    75%{background-color: palevioletred;}
+    100%{background-color: #00f2ff;}    
+
+}

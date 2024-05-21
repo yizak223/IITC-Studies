@@ -1,0 +1,43 @@
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: sprade 3s;
+}
+
+
+.firstImage{
+    z-index: 10;
+}
+img{
+    width: 32vw;position: relative;
+    animation: sprade2 3s backwards;
+}
+@keyframes sprade2{
+    from{
+        position: absolute;
+    }
+    to{
+        position: inherit;
+    }
+}
+
+img:hover{
+    filter: grayscale(1);
+}
+
+
+
+
+
+@media screen and (max-width:600px ) {
+    div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:600px ) {
+    div{
+        flex-direction: row;   
+     }
+}

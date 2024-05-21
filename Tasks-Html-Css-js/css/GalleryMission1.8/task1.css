@@ -1,0 +1,46 @@
+
+main{
+    background-color: aqua;
+    position: relative;
+    height: 80vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 10vh;
+    background-size: auto;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    animation: slide 13.5s backwards;
+    background-image: url(1spiderman-background.jpg);
+}
+
+
+@keyframes slide{
+    0%{
+        background-image: url(1spiderman-background.jpg);
+}
+    11%{
+         background-image: url(2spider-man-oposite.jpg);
+}
+    22%{
+        background-image: url(3spider-man&girlfriend.jpg);
+}
+   33%{
+    background-image: url(4spiderman-hang.jpg);
+}
+   44%{
+    background-image: url(5fight-spiderman.webp);
+}
+    55%{
+    background-image: url(6jump-spiderman.jpg);
+}
+    66%{
+    background-image: url(7on-the-air-spiderman.jpg);
+}
+    77%{
+    background-image: url(8spiderman-sit.jpeg);
+}   
+88%{
+    background-image: url(9three-spiderman.jpg);
+}
+}

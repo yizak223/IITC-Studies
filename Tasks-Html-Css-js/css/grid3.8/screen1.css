@@ -1,0 +1,8 @@
+.container{
+    grid-template-areas: 
+    'headr headr headr headr '
+    'sidebar main main main '
+    'sidebar main main main '
+    'sidebar main main main '
+    'footr footr footr footr ';
+}

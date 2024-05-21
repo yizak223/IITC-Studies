@@ -1,0 +1,161 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+h1{ 
+    color: #f4aaaa;
+    text-align: center;
+    margin: 0;
+}
+.title-movies{
+    background-color: #331dac81;
+    color: #ff0000;
+    width: 100%;
+    text-align: center;
+}
+*{
+padding:0;
+    margin:0;
+}
+section{
+   
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+}
+.container-movies{
+    display: flex;
+    flex-direction: row;
+}  
+.movie{
+    display: flex;
+    justify-content: space-around;
+    width: 33vw;
+    height: 40vh;
+}
+.year_like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-self: flex-end;
+    align-items: flex-end;
+}
+.year_like p{
+    margin: 0;
+    align-self: flex-end;
+}
+.year{
+    transition: 0.5s;
+    padding: 1.5vh;
+    border-radius: 3px;
+    background-color: #000000;
+    border-radius: 10%;
+}
+.likes{
+    display: flex;
+    transition: 0.5s;
+    padding: 1.5vh;
+    border-radius: 3px;
+    background-color: #000;
+    border-radius: 10%;
+    gap: 1vh;
+    cursor: pointer;
+}
+.likes:hover{
+    background-color: #ff0000;
+}
+
+.movie-card img:hover{
+    filter:opacity(50%);
+}
+.Deadpool .movie-card{
+    background-color: rgba(199, 233, 60, 0.633);
+}
+.Avengers .movie-card{
+    background-color: #4a72eda7;
+}
+.CaptainAmerica .movie-card{
+    background-color: rgba(38, 206, 32, 0.666);
+}
+.IronMan .movie-card{
+    background-color: #561616bb;
+}
+@media screen and (max-width:600px) {
+    body{
+        grid-template-rows: 10vh 200vh 200vh 190vh 10vh;
+    }
+    main{
+        height: 590vh;
+        background-size: 100% 590vh;
+    }
+    section{
+        flex-direction: column;
+    }
+    .title-of-the-page{
+        height: 5vh;
+    }
+    .container-movies{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 130vh;
+    }
+ 
+    .movie-card{
+        position: relative;
+        border-radius: 5%;
+        display: flex;
+        justify-content: space-around;
+        row-gap: 2vh;
+        flex-direction: column;
+        height: 43vh;
+        padding: 4vh 3vh 2vh 3vh ;
+    }
+    .movie-card img{
+        width: 50vw;
+        height: 30vh;
+        box-shadow: 5px 5px 10px 2px #000;
+    }
+}
+
+    @media screen and (min-width:601px) {
+    body{
+            grid-template-rows: 20vh 80vh 90vh 80vh 20vh;
+        }
+    main{
+            height: 245vh;
+            background-size: 100% 245vh;
+    }
+    section{
+            flex-direction: row;
+    }
+    .title-of-the-page{
+        height: 10vh;
+    }
+    .container-movies{
+            flex-direction: row;
+    }
+    .title-movies{
+            width: 100%;
+            text-align: center;
+    }
+    .movie-card{
+        position: relative;
+        border-radius: 5%;
+        display: flex;
+        justify-content: space-around;
+        row-gap: 2vh;
+        flex-direction: column;
+        height: 43vh;
+        padding: 4vh 3vh 2vh 3vh ;
+    }
+    .movie-card img{
+        width: 18vw;
+        height: 30vh;
+        box-shadow: 5px 5px 10px 2px #000;
+    }
+    }

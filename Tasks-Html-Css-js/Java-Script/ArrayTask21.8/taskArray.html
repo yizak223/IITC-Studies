@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //2
+                var arrayCountry=['israel','italia','usa','france','ukraine','china']
+                var vegtablesArray=['Carrot','Broccoli','Tomato','Spinach','Cauliflower','Bell Pepper']
+                var fruitsArray=['Apple','Banana','Orange','Grapes','Strawberry','Pineapple']
+                var carsArray=['Toyota','Ford','Honda','BMW','Mercedes-Benz','Chevrolet']
+                var kitchenItemsArray=['Cutting board','Knife set','Mixing bowls','Saucepan','Blender','Toaster']
+                console.log(arrayCountry[1]);
+                console.log(vegtablesArray[3]);
+                console.log(fruitsArray[5]);
+                console.log(kitchenItemsArray[5]);
+                arrayCountry[0]='Canada';
+                vegtablesArray[2]='Potato';
+                fruitsArray[2]='Mango';
+                carsArray[1]='volvo';
+                kitchenItemsArray[5]='fork';
+                function printCountries() {
+                    console.log(arrayCountry);    
+                }
+                function printCountriesLINE() {
+                    for(var i=0;i<=5;i++)
+                    {
+                        console.log(arrayCountry[i]); 
+                    }
+                }
+                printCountriesLINE()
+                //7
+                function changePARM(fruit) {
+                    fruitsArray.push(fruit)
+                }
+                //8
+                function ExsistArray(fruit) {
+                    var exsist=false
+                    for(var i=0;i<=5;i++){
+                        if(fruit==fruitsArray[i])
+                        {
+                            return true;
+                        }
+                    }
+                    return exsist;
+                }
+                ExsistArray('Apple')
+                //9
+              function checkEqualArray(someArray) {
+                if(someArray.length==kitchenItemsArray.length)
+                {
+                    return console.log('they equals');
+                }
+              }
+              //10
+              function checkNumBig(nun,country) {
+                if(num>5){
+                    arrayCountry.push(country);
+                }
+                else{
+                    arrayCountry.unshift(country);
+                }
+              }
+              //11
+              function addITEM(num,kitchenItem) {
+                if(num>kitchenItem.length){
+                    kitchenItem.push(item)
+                    console.log(kitchenItem);
+                }
+                else{
+                    console.log('the function didnt succeed');
+                }
+              }
+              //12
+              function CreateFunOfUserNUM(num) {
+                var someArray=[];
+                for(var i=0;i<num;i++){
+                    someArray[i]=i;
+                }
+              }
+              //13
+              function CreateFunOfUserNUM(num) {
+                var someArray=[];
+                for(var i=num-1;i>=0;i--){
+                    someArray[i]=i;
+                }
+              }
+              //14
+              function builtArrayfamilies() {
+                var familyArray=[]
+                for(var i=0;i<4;i++)
+                {
+                    familyArray[i]=prompt('enter family name')
+                }
+                return familyArray;
+              }
+              //15
+              function sdarotArray(num) {
+                var sdarotArray=[];
+                for(var i=0;i<num;i++)
+                {
+                     sdarotArray[i]=prompt('enter sidra')
+                }
+              }
+              //16
+              var arrayNum=[5,3,7,8,11];
+              console.log(arrayNum.length);
+              var sum=0;
+              for(var i=0;i<arrayNum.length;i++)
+              {
+                sum=sum+arrayNum[i];
+              }
+              var avg=sum/arrayNum.length;
+              console.log("Sum:", sum);
+              console.log("Average:", avg);
+            //17
+            var namesArray=['name1','name2','name3','name4','name5']
+            for(var i=0;i<namesArray.length;i++)
+            {
+                console.log(namesArray[i]);
+            }
+            //18
+            function CheckIfExsistNum(someArray,num) {
+                for(var i=0;i<someArray.length;i++)
+                {
+                    if(num==someArray[i])
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            function printIfZogi(someArray) {
+                var c=0;
+                for(var i=0;i<someArray.length;i++)
+                {
+                    if(someArray[i]%2==0)
+                    {
+                        c++
+                    }
+                }
+                return c;
+            }
+            printIfZogi(arrayNum)
+            //21
+            function TwoArraysCheckIfSame(someArray1,someArray2) {
+                var kli=0;
+                if(someArray1.length==someArray2.length)
+                {
+                    for(var i=0;i<someArray1.length;i++)
+                    {
+                        kli=someArray2[i];
+                        someArray2[i]=someArray1[i];
+                        someArray1[i]=kli;
+                    }
+                    return true;
+                }
+                return false;
+            }
+            //23 24
+            function sortNum(array) {
+            return array.sort((a, b) => a - b);
+            }
+            var arrayInput=[1,2,6,2,7,1,4]
+            function sortNumbers(array) {
+                var len=array.length;
+                for (var i=0;i<len-1;i++)
+                {
+                    for(var j=0;j<len-i-1;j++)
+                    {
+                        if(array[j]>array[j+1])
+                        {
+                            [array[j],array[j+1]]=[array[j+1],array[j]]
+                        }
+                    }
+                }
+                console.log(array);
+            }
+
+            //25
+            function ReturntheBigger(array) {
+                var max=array[0];
+                for(var i=1;i<array.length;i++){
+                    if(array[i]>max)
+                    {
+                    max=array[i];
+                    }
+                }    
+                return max;         
+            }
+            //26
+            ReturntheBigger([1,2,3,2,1,5,2,,1,10])
+            function ReturntheSmallest(array) {
+                var indexMin=0;
+                var min=array[0];
+                for(var i=1;i<array.length;i++){
+                    if(array[i] < min)
+                    {
+                        min=array[i];
+                        indexMin=i;
+                    }
+                }    
+                console.log('Index of the smallest element:', indexMin);
+                return indexMin;         
+            }
+            ReturntheSmallest([1,2,1,0,1,0])
+            //27
+            function sumOfArray(array) {
+                var sum=0;
+                for (var i = 0; i < array.length; i++) {
+                     sum = sum+ array[i];
+                }
+                return sum;
+            }
+            //28
+            function biggerKafolSmaller(array) {
+                min=array[0];
+                max=array[0];
+                for(var i=1;i<array.length;i++)
+                {
+                    if(array[i]>max)
+                    {
+                        max=array[i];
+                    }
+                    if(array[i]<min)
+                    {
+                        min=array[i];
+                    }
+                }
+                console.log(min*max);
+                return min*max;
+            }
+            biggerKafolSmaller([1,5,2,8,0])
+            //29
+            function IndexOfZogiBig(array) {
+                var Zogi=Number.MIN_VALUE;
+                var index=-1;
+              for(var i=0;i<array.length;i++)
+              {
+                if(array[i]%2==0 && array[i]>Zogi)
+                {
+                    Zogi=array[i];
+                    index=i;
+                }
+              }
+              if (index !== -1) {
+                console.log('The largest even number:', Zogi, 'Index:', index);
+              } 
+              else 
+              {
+              console.log('No even number found in the array.');
+              }
+            }
+            IndexOfZogiBig([10,1,,12,40,6,11,44])
+            //30
+            function sumOfEIzogi(array) {
+                var sum=0;
+                for(var i=0;i<array.length;i++)
+                {
+                    if(array[i]%2==1)
+                    {
+                        sum=sum+array[i];
+                    }
+                }
+                console.log("the sum is:", sum);
+                return sum;   
+            }
+            //31
+            function addName(array,name) {
+                array.push(name)
+                return array
+            }
+            //32
+            function addMail(array,mail) {
+                array.unshift(mail);
+                return array
+            }
+            //33
+            function startZogiEndEiZogi(array,num) {
+                if(num%2==0)
+                {
+                    array.push(num)
+                }
+                else{
+                    array.unshift(num)
+                }
+                
+            }
+            //34
+            function isNumExsisit(array,num) {
+                for(var i=0;i<array.length;i++)
+                {
+                    if(array[i]=num)
+                    {
+                        array.pop(array[i])
+                        return array;
+                    }
+                }
+                array.push(num);
+                return array;
+            }
+            //35
+            function isNUMbigger(array,num) {
+                for(var i=0;i<array.length;i++)
+                {
+                    if(num<array[i])
+                    {
+                        array.unshift(num)
+                        return array;
+                    }
+                }
+                array.push(num)
+                return array;
+            }
+            //36
+            function minusNumFromArray(array,num) {
+                var hefresh=0;
+                if(num<array.length)
+                {
+                    hefresh=array.length-num;
+                }
+                if(hefresh>0)
+                {
+                    for(var i=array.length-1;i>=hefresh;i--)
+                    {
+                    array.pop(array[i])
+                    }
+                }
+                return array;
+            }
+            //36
+            function dltCell(array,num) {
+                if(num<array.length)
+                {
+                    array.splice(num,1);
+                }
+                console.log(array);
+            }
+           
+            minusNumFromArray([1,2,3,4,5,6,7],6)
+            //37
+            function isBIGGER13orSMALLER(array) {
+                var sum=sumOfArray(array);
+                if(sum>=13)
+                {
+                    console.log('bar mitzva');
+                }
+                else if(sum==12)
+                {
+                    console.log('bat mitzva');
+                }
+                else{
+                    console.log('kid');
+                }
+            }
+            isBIGGER13orSMALLER([10,12])
+            //38
+            function printAsMuchAsInsert(age,name,family) {
+                if(age>18)
+                {
+                    for(var i=0;i<num;i++)
+                    {
+                        console.log('name: ',name,'family ',family);
+                    }
+                }
+                else{
+                    console.log('name: ',name,'family ',family);
+                }
+            }
+            //39
+            function printJS1000() {
+                for(var i=0;i<1000;i++)
+                {
+                    console.log('javascript is not JAVA');
+                }
+            }
+            //40
+            function printName(name,num) {
+                for(var i=0;i<num;i++)
+                {
+                    console.log(name);
+                }
+            }
+            //41
+            function printDetails(name,mail,age) {
+                console.log(name, mail, age);
+            }
+            //42
+            function printIfmYName(num) {
+                for(var i=0;i<num;i++)
+                {
+                    var name=prompt('enter name')
+                    if(name=='yizak')
+                    {
+                        console.log(name);
+                    }
+                }
+            }
+            //43
+            function IkafolJ() {
+                var num1=+prompt('num1')
+                var num2=+prompt('num2')
+                for(var i=1;i<=num1;i++)
+                {
+                    for(var j=1;j<=num2;j++)
+                    {
+                        console.log(j*i);
+                    }
+
+                }
+            }
+            //45
+            var arrayNmaes=['name1','name2','name3','name4','name5']
+            for(var i=0;i<5;i++){
+                console.log(arrayNmaes[i]);
+            }
+            //46
+            function getArrayUser() {
+                var namesArray=[];
+                for(var i=0;i<5;i++)
+                {
+                    namesArray[i]=prompt('name',i)
+                }
+            }
+            //47
+            function getEizogiFromYourArray() {
+                var numArray=[];
+                var numArrayEiZogi=[];
+                var c=0;
+                for(var i=0;i<7;i++)
+                {
+                    numArray[i]=+prompt('num')
+                    if(numArray[i]%2==1)
+                    {
+                        numArrayEiZogi[c]=numArray[i];
+                        c++
+                    }
+                }
+                console.log(numArrayEiZogi);
+            }
+            //48
+            var arrayNumWord=['hellow',2,4,'yes','no',23]
+            console.log(arrayNumWord);
+            for(var i=0;i<arrayNumWord.length;i++)
+            {
+                if(typeof arrayNumWord[i] !== 'number')
+                {
+                    arrayNumWord[i]='not_number'
+                }
+            }
+            console.log(arrayNumWord);
+            //49
+            function builtZogiArray() {
+                var num1=+prompt('num')
+                var zogiArray=[]
+                for(var i=0;i<9;i++)
+                {
+                var num=Math.floor(Math.random()*100)
+                if(num%2==0)
+                {
+                    zogiArray[i]=num
+                }
+                else{
+                    zogiArray[i]=num+1;
+                }  
+                }
+                zogiArray.push(num1)
+                console.log(zogiArray);
+                return zogiArray
+            }
+            //49
+            function builtZogiArray2() {
+                
+                var zogiArray=[]
+                for(var i=0;i<10;i=i)
+                {
+                    var num=+prompt('num')
+                    if(num%2==0)
+                    {
+                        zogiArray[i]=num;
+                        i++
+                    }
+                }
+                return zogiArray;
+            }
+            //50
+            function shetahHikefMalben() {
+                var width=+prompt('width')
+                var heigt=+prompt('heigt')
+                var shetah=width*heigt;
+                var Hikef=width*2+heigt*2;
+            }
+            //51
+            function whatOrder(){
+                var num1=+prompt('num1');
+                var num2=+prompt('num2');
+                var num3=+prompt('num3');
+
+                if(num1>num2 && num2>num3)
+                {
+                    console.log('סדר יורד');
+                }
+                else if(num1<num2 && num2<num3)
+                {
+                    console.log('סדר עולה');
+                }
+                else{
+                    console.log('אין סדר');
+                }
+                // var order=+prompt('enter num')
+                // var c=0
+                // for(var i=1;i<3;i++)
+                // {
+                //     var num=+prompt('enter num')
+                //     if(num>order){
+                //         order=num;
+                //         c++;
+                //     }       
+                //     else if(num<order)
+                //     {
+                //         order=num;
+                //         c--
+                //     }
+                // }
+                // if(c==2){
+                //     console.log('order');
+                // }
+                // else if(c==-2)
+                // {
+                //     console.log('order down');
+                // }
+                // else{
+                //     console.log('no order');
+                // }
+            }
+            //52
+            function printSfarot() {
+            var num =+prompt('number')
+            while (num>0) {
+                console.log(num%10); 
+                num=Math.floor(num/10)
+            }
+            }
+            //53
+            function bulitArraySmaller10() {
+                var usernumber;
+                var arrayNum=[];
+                do{
+                    usernumber=+prompt('num')
+                    if(isNaN(usernumber))
+                    {
+                        console.log("Invalid input. Please enter a valid number.");
+                    }
+                    else{
+                        if(usernumber>10)
+                        {
+                            console.log("Number is greater than ten. Stopping input.");
+                        }
+                        else{
+                            arrayNum.push(usernumber);
+                        }
+                    }
+                }while (usernumber <= 10);
+                console.log('the array',arrayNum);
+                return arrayNum;
+            }
+    </script>
+</body>
+</html>

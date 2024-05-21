@@ -1,0 +1,91 @@
+html{
+    background-color: #f7d8ae;
+    
+}
+body{
+    color: rgb(0, 0, 0);
+    background-color: #b3b3b3;
+    border: 1px solid #0c4c76;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    background-color: rgb(227, 230, 229);
+    border-radius: 25px;
+    
+    
+}
+.beside{
+    color: #ffffff;
+    border: 1px solid #0c4c76;
+    float: left;
+    display: block;
+    position: sticky;
+    height: 920px;
+    width: 160px;
+    margin-right: 10px;
+    background-color:#0c4c76 ;
+    border: 5px solid #0c4c76;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-right: 2px solid rgb(255, 255, 255);
+    
+}
+h1{
+    
+    
+    color: #000000;
+    width: fit-content;
+    border-radius: 25px;
+    
+     font-size: 25px;
+    width: 99%;
+   margin-top: 0%;
+}
+.content{
+    margin-left: 10px;
+}
+
+.h
+{
+    border: 5px solid #0c4c76;
+    background-color: #0c4c76;
+    font-weight: bold;
+    
+    width: 98.8%;
+    margin: 0%;
+    color: #ffffff;
+}
+p{
+    margin: 0;
+    
+}
+a.github::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid#000;
+    border-radius: 5px;
+    margin: 3px;
+}
+footer{
+    
+    margin-top: 10px;
+    position: absolute;
+    bottom: auto;
+    text-align: center;
+    background-color: #0c4c76;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: 0;
+    right: 0;
+}
+li{
+    margin-left: 10pc;
+}
+/*    background-image: url("https://www.interviewbit.com/blog/wp-content/uploads/2022/05/FULL-STACK-WEB-DEVELOPMENT-1024x950.png");
+        background-position: right bottom;
+        background-size: 49.5%;
+        background-repeat : no-repeat; */

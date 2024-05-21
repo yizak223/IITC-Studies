@@ -1,0 +1,475 @@
+*{
+    direction: rtl;
+    font-family: "Narkiss Block Regular";
+}
+
+body{
+    width: 1240px;
+    height: 103px;
+    margin-right: 25vh;
+    text-align: center;
+}
+img{
+    cursor: pointer;
+}
+/* every fake link */
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+/* the content in the center */
+main{
+    /* width: 80%; */
+    /* width: 1240px;
+    height: 103px;
+    margin-left: 30vh;
+    margin-right: 20vh;
+    text-align: center; */
+}
+header{
+    width: 1240px;
+    height: 103px;
+    margin-top: 10px;
+   position: relative;
+   font-size: 13px;
+   /* font-weight: 600; */
+}
+/* ynet image */
+header .ynet{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 176px;
+    height: 75px;
+}
+/* make them be in the same line */
+.user,.puser,#wth,.weather,.pemail,.imgemail,.pbell,.bell,.premium{
+    position: absolute;
+    bottom: 20px;
+    margin: 0;
+}
+/*  bell */
+.bell{
+    right: 0;
+    margin-left: 4px;
+}
+/* bell text */
+.pbell{
+    right: 20px;
+}
+/* the red email */
+.imgemail{
+    right: 70px;
+    margin-left: 4px;
+}
+.pemail{
+    right: 91px;
+}
+.weather{
+    right: 168px;
+}
+#wth{
+    right: 195px;
+    border: none;
+}
+.user{
+    left: 285px;
+}
+.puser{
+    left: 235px;
+}
+.premium{
+    width: 206px;
+    height: 27px;
+    left: 0px;
+    bottom: 16px;
+}
+/* the nav bar */
+.navbar{
+    background-color: rgb(222, 26, 26) ;
+    height: 28px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 1231px;
+}
+.navbar a, .more{
+    margin: 0px 0px 0px 30px;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+.link-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+.navbar i{
+    color: #ffffff;
+    position: relative;
+    top: 0.8vh;
+}
+nav a:hover, .more:hover{
+    font-weight: 800;
+}
+.more{ 
+    margin: 5px 0px 0px 30px;
+    border-radius: 50px;
+    background-color: rgb(222, 26, 26);
+    border-color: rgb(255, 255, 255);
+    border-width: 2px;
+    color: #ffffff;
+   width: 45px;
+   padding-top: 1px;
+}
+
+/* the news flash */
+.flash{
+    margin-top: 20px;
+    height: 100px;
+    background-color: rgba(243, 248, 249);
+    display: flex;
+    margin-bottom: 15px;
+}
+.f1,.f2,.f3,.f4,.f5 {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 16px 0px 8px;
+    text-align: right;
+    width: 190px;
+    height: 70px;
+    border-left-style: Dotted ;
+    border-left-color: rgb(0, 0, 0);
+    border-left-width: 2px;
+    cursor: pointer;
+}
+.f1,.f2,.f3,.f4,.f5{
+    font-weight: bold;
+}
+.spann{
+    font-weight: 400;
+}
+.f5{
+    border-left-style: none ;
+}
+.f6{
+    color:rgb(222, 26, 26) ;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+/* the arrow */
+aside img{
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+     
+}
+.hoverflash1:hover,.hoverflash2:hover ,.hoverflash3:hover,.hoverflash4:hover,.hoverflash5:hover{
+    color: #3537c0;
+}
+.apear1 ,.apear2 ,.apear3 ,.apear4 ,.apear5 {
+    display: none;
+    position: absolute;
+    width: 350px;
+    max-height: fit-content;
+    box-shadow:inset 0 0 10px 0 #b2b2b4; ;
+    text-align: right;
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.hoverflash1:hover .apear1 ,.hoverflash2:hover .apear2 ,.hoverflash3:hover .apear3 ,.hoverflash4:hover .apear4,.hoverflash5:hover .apear5{
+    display: block;
+    background-color: #ffffff;
+    color:#000000
+}
+.icon-flash{
+    text-align: right;
+}
+.icon-flash img{
+    width: 26px;
+    margin: 10px;
+}
+/* the main report */
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-align: right;
+    height: 343px;;
+}
+.paragrph{
+    grid-column: 1/ span 1;
+    font-size: 20px;
+}
+.image{
+    grid-column: 2 / span 1;
+    
+}
+ .image img {
+    height: 343px;
+    width: 611px;
+}
+  .date{
+    grid-row: 1 / span 1; 
+    grid-column: 1 / span 1;
+  }
+.title{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 46px;
+    font-weight: bold;
+}
+.paragrph{
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.Reporter{
+   color: #7a7a7b; 
+   margin-top: 0;
+}
+.advertize-main{
+    height: 497px; 
+    width: 300px;
+    float: right;
+}
+.advertize-main2{
+    float: right; 
+    height: 497px; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.the-second-part{
+    margin-top: 10px;
+}
+/* from here this is the left news  */
+.container-news{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 10px;
+}
+.text-news, .text-news2, .text-news4{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(222, 26, 26);
+    width: 390px;
+    color: #ffffff;
+    height: 113px;
+}
+.text-news2{
+    background-color: #1417ac;
+}
+.text-news4{
+   background-color: #0c1c3a;
+}
+.image-news img{
+    height: 113px; 
+    width: 200px;
+}
+.text-news h2, .text-news2 h2,.text-news4 h2{
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.the-text, .the-text2, .text-news4{
+    margin: 0;
+    font-weight: 500;
+}
+.reporter, .reporter2, .reporter4{
+    margin: 0;
+     margin-top: 7px;
+     font-size: 14px;
+}
+
+
+  /*  grid container */
+  .the-hottest {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+/*  the first row */
+.the-title {
+    grid-column: span 3;
+    width: 608px;
+    height: 30px;
+    background-color:#1417ac ;
+    color: #ffffff;
+    text-align: right;
+  }
+   .the-title p{
+    display: flex;
+    margin: 10px;
+    line-height: 15px;
+    font-size: 17px;
+    font-weight: bold;
+   }
+
+.hottest-title{
+    height: 60px;
+    width: 190px;
+    margin-top: 0px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+}
+.hottest-title:hover{
+    color: #3537c0;
+}
+.reporter-hottest{
+    font-size: 13px;
+     color:#78787b;
+      text-align: right;
+}
+.second-row-articles img {
+    max-width: 100%;
+    height: auto;
+}
+
+.part4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
+}
+.part4-title{
+    height:30px ;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    background-color:#1417ac ;
+}
+.part4-title p{
+     display: flex;
+    margin: 10px;
+    line-height: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#more-news{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.news4 {
+    display: grid;
+    grid-template-columns: 190px 370px; /* Two columns: first one auto-sized, second one takes remaining space */
+    grid-template-rows: repeat(2, 1fr); /* two rows with equal height */
+    gap: 10px;          
+}
+.news4 p{
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+.title-news4:hover{
+    color:#3537c0 ;
+}
+.news4 i{
+    color: #000000;
+    font-size: 15px;
+}
+.reporter-news4{
+    font-weight: 400;
+    font-size: 12px;
+    color: #78787b ;
+    padding-top: 15px;
+}
+.news4 img{
+    width: 190px;
+    height: 107px;
+    margin-bottom: 15px;
+}
+.item4 {
+     padding: 10px;
+ }
+
+.image-container4 {
+    grid-row: span 8; /* This will make the image span three rows */
+     max-width: 100%;
+     height: auto;
+     width: 190px;
+     height: 177px;
+}
+
+.item4 p {
+     margin: 0; 
+}
+/* from here down all the advertize */
+/* the top advertize */
+.uadvertize{
+    position: relative;
+    top: 0;   
+}
+/* his image */
+.uadvertize img{
+    height: 124.4px;
+    width: 1005px;
+    border: solid 5px ;
+    border-color: rgb(233, 233, 233);
+    
+}
+/* the right advertize  */
+.radvertize{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* the container accessibility icon */
+.acb{
+    position: fixed;
+    top: 6vw;
+    left: 0;
+}
+/* icon */
+.acb i{
+    background-color: rgb(5, 5, 46);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    width:2vw;
+    height: 5vh;
+    padding-top: 8px;
+    padding-right: 5px;
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+}
+/* the butterfly */
+.butr{
+    position: fixed;
+    top: 23vh;
+    left: 0;
+    background-color: rgb(36,170,226);
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+    padding-top: 3px;
+    padding-right: 5px;
+    
+}
+
+.butr img{
+    width: 25px;
+}
+.butr:hover{
+    padding-left: 20px;
+    border-start-start-radius: 35%;
+    border-end-start-radius: 35%;
+    transition: all 1s;
+}
+/* the advertize in the buttom */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: -20%;
+}

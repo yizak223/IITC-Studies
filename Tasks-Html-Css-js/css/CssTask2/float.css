@@ -1,0 +1,33 @@
+div{
+    float: left;
+}
+/* .changer{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: color-change 5s linear infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+} */
+
+.changer {
+    width: 100px;
+    height: 100px;
+    animation: color-change 5s linear;
+  }
+  
+  @keyframes color-change {
+    0% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+  }

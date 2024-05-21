@@ -1,0 +1,14 @@
+.marvel h1{
+    text-align: center;
+}
+main{
+    flex-direction: column;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.firstSectionOfThePage{
+    flex-direction: column;
+    text-align: center;
+}

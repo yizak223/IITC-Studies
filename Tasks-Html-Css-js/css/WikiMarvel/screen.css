@@ -1,0 +1,18 @@
+@media screen and (min-width:601px) {
+    body {
+        grid-template-rows: 20vh 80vh 100vh 100vh 20vh;
+    }
+
+    #main {
+        height: 280vh;
+        background-size: 100% 280vh;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .container-videos {
+        flex-direction: row;
+    }
+}

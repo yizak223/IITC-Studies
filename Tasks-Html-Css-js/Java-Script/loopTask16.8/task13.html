@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num =+prompt('num');
+        var b=num;
+        var s=num;
+        var i=1;
+        while(i<=4)
+        {
+               num =+prompt('num');
+            if(num>b){
+                b=num;
+            }
+            else if(num<s){
+                s=num;
+            }
+            i++;
+        }
+        console.log('bigger'+b);
+        console.log('smallest'+s);
+    </script>
+</body>
+</html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var mYstrg='hgfdsa'
+        // function printTav(strg) {
+        //     for(var i=0;i<strg.length;i++)
+        //     {
+        //         console.log('task1 '+strg[i]);
+        //     }
+        // }
+        // printTav(mYstrg)
+        // //2
+        // function printIndexOfString(strg) {
+        //     var myStrgn="";
+        //     for(var i=0;i<strg.length;i++)
+        //     {
+        //         myStrgn=myStrgn+strg[i]+i;
+        //     }
+        //     console.log('task2 '+myStrgn);
+        //     return myStrgn;
+        // }
+        // printIndexOfString(mYstrg)
+        // //3
+        // function zogiTo2(strg) {
+        //     var myStrgn='';
+        //     for(var i=0;i<strg.length;i++)
+        //     {
+        //         if(i%2!=0)
+        //         { 
+        //             myStrgn=myStrgn+strg[i]; 
+        //         }
+        //         else
+        //         {
+        //             myStrgn=myStrgn+2;
+        //         }
+        //     }
+        //     console.log('task3 '+myStrgn);
+        //     return myStrgn;
+        // }
+        // zogiTo2(mYstrg)
+        // //4
+        // function printYesOrNo(name) {
+        //     if(name[0]=='A')
+        //     {
+        //         console.log('task4 '+'hellow');
+        //     }
+        //     else{
+        //         console.log('task4 '+'bye');
+        //     }
+        // }
+        // printYesOrNo('fdd')
+        // printYesOrNo('Add')
+        //5
+        function IfEtavEnd() {
+            var familyName=prompt('family')
+            if (familyName.lastIndexOf("E") == familyName.length-1)
+            {
+                console.log('yes');
+            }
+            else{
+                console.log('bydde');
+            }
+        }
+        // IfEtavEnd('dddE')
+        //6
+        function toUpprCase(strg) {
+            console.log(strg.toUpperCase());
+            return strg.toUpperCase();
+        }
+        toUpprCase('strg')
+        //7
+        function psikDisapear(strNum) {
+            // var Tonum=Number(strNum);
+            var myStr='';
+            for(var i=0;i<strNum.length-1;i++)
+            {
+                if(strNum[i]!=',')
+                {
+                    myStr=myStr+strNum[i];
+                }
+            }
+            console.log(myStr);
+            return myStr;
+        }
+        function bulitArrayFromString(strNum) {
+          var array=[]
+          var c=0;
+          for(var i=0;i<strNum.length;i++)
+          {
+            if(strNum[i]!=',')
+            {
+             array[c]=strNum[i]
+            c++ 
+            }
+            
+          }
+          console.log(array);
+          return array;
+        }
+
+        function bulitArrayFromString(strNum) {
+          var array=[]
+          var c=0;
+          for(var i=0;i<strNum.length;i++)
+          {
+            if(strNum[i]!=',')
+            {
+             array[c]=strNum[i]
+            c++ 
+            }
+            
+          }
+          console.log(array);
+          return array;
+        }
+        function changeStrToArray(strParam){
+            var newArray=[];
+            var commaIndex = strParam.indexOf(",")//2
+            var startIndex = 0;
+            var tempStr;
+            while(commaIndex>0){
+                tempStr = strParam.substring(startIndex,commaIndex) //12
+                newArray.push(+tempStr);
+                startIndex = commaIndex+1;
+                commaIndex = strParam.indexOf(",",startIndex)//
+            }
+            newArray.push(+strParam.substring(startIndex));
+            return newArray;
+        }
+        var someStr = "12,3,455";
+        console.log(changeStrToArray(someStr)); 
+        psikDisapear('1,2,3,4,5,')
+
+
+      //8
+      function rand() {
+        return Math.floor(Math.random()*10)
+      }
+      //9
+      function randomUser(num) {
+        return Math.floor(Math.random()*num)
+      }
+      //10
+      function guessRandom(num) {
+        var r=Math.floor(Math.random()*10)
+        if(r==num)
+        {
+            console.log('good!');
+        }
+        else{
+            console.log('you are zero');
+        }
+      }
+      //11
+      function randomArray() {
+        var array=[];
+        for(var i=0;i<10;i++)
+        {
+            array[i]=Math.floor(Math.random()*100)
+        }
+      }
+      //12
+      function whoBiggerRANDOMnumUSER(num) {
+        var random=Math.floor(Math.random()*10)
+        if(num>random)
+        {
+            return num;
+        }
+        else{
+            random
+        }
+      }
+      //13
+      function getTheSmaller() {
+        var num = [];
+        for (var i = 0; i < 5; i++) {
+        
+            num[i]=+prompt('enter num')
+        }
+        console.log(num);
+        var min=Math.min(...num);
+        console.log(min);   
+    }
+      //14
+      function getifZogiBigElseSmaller() {
+        var user=+prompt('enter num');
+        var user=Math.floor(Math.random()*100);
+        if(user%2==0)
+        {
+            return Math.min(user,user)
+        }
+        else
+        {
+            return Math.max(user,user)
+        }
+      }
+      //15
+      function len364val873() {
+        var array=[]
+        for(var i=0;i<Math.floor(Math.random()*364);i++)
+        {
+            array[i]=Math.floor(Math.random()*873)
+        }
+        return array;
+      }
+      len364val873()
+      //16
+      function printRandomIndex(array) {
+        console.log(array[Math.floor(Math.random()*array.length)]);
+      }
+      //17
+      function changeCharat() {
+        var name=prompt('name');
+        var index=Math.floor(Math.random()*(name.length-1))   
+        var nameChange='';
+        nameChange=name.substr(0,index)+name[index].toUpperCase()+name.substr(index,name.length-1)
+        console.log(nameChange);
+      }
+    //   changeCharat()
+      //18
+      function ifStartNumElseMessageElseAge() {
+        var name1=prompt('name1')
+        var name2=prompt('name2')
+        var age=+prompt('age1')
+        var age2=+prompt('age2')
+        var random=Math.floor(Math.random()*873);
+        console.log(random);
+        if(name1[0]==name2[0])
+        {
+            console.log(random);
+        }
+        if(name1[name1.length-1]==name2[name2.length-1])
+        {
+            console.log(name1[name1.length-1]);
+        }
+        else{
+            console.log(age1+age2);
+        }
+      }
+      //19
+      function printUntilRandom() {
+        var text=prompt('text')
+        var random=Math.floor(Math.random()*5)
+        console.log(text.substr(0,random));
+      }
+      //20
+      function checkIfMithalek3() {
+        var num=+prompt('number')
+        var rand=Math.floor(Math.random()*num)
+        if(num%3==0)
+        {
+            for(var i=0;i<rand;i++)
+            {
+                console.log(rand);
+            }
+        }
+        else{
+            console.log(rand*Math.PI);
+        }
+      }
+      //21
+      function printHourAndDate() {
+        var now = new Date();
+        var currentHour = now.getHours();
+        var currentDay = now.getDate();
+        var currentMonth = now.getMonth() + 1; 
+        var currentYear = now.getFullYear();
+
+        console.log("Current Hour:", currentHour);
+        console.log("Current Day:", currentDay);
+        console.log("Current Month:", currentMonth);
+        console.log("Current Year:", currentYear);
+        console.log("Current Hour:", now.getHours(), "Current Date:", now);
+      }
+    //   printHourAndDate()
+      //22
+      function printFromString(dateString) {
+        var timestamp = Date.parse(dateString);
+        var dateObject = new Date(timestamp);
+        console.log(dateObject);
+      }
+      printFromString('08 23 2023 ')
+      //23
+      function printFromStringUser() {
+        var dateString=prompt('enter date')
+        var dateObject = new Date(Date.parse(dateString));
+        console.log(dateObject);
+      }
+    //   printFromStringUser()
+    //24
+    function printFromStringUserMonth() {
+        var dateString=prompt('enter date')
+        
+        var hour = new Date(dateString).getMonth()+1;
+        console.log(hour);
+      }
+    //   printFromStringUserMonth()
+      //25
+       function printFromStringUserYear() {
+        var dateString=prompt('enter date')
+        
+        var hour = new Date(dateString).getFullYear();
+        console.log(hour);
+      }
+    //   printFromStringUserYear()
+    //26
+    function printFromStringUserHour() {
+        var dateString=prompt('enter date')
+        
+        var hour = new Date(dateString).getHours();
+        console.log(hour);
+      }
+    //   printFromStringUserHour()
+    //27
+    function printFromStringUserMinutes() {
+        var dateString=prompt('enter date')
+        
+        var hour = new Date(dateString).getMinutes();
+        console.log(hour);
+      }
+    //   printFromStringUserMinutes()
+    //28
+    function getTheEarilierDate() {
+        var dateString1=prompt('enter date1')
+        var dateString2=prompt('enter date2')
+        var firstDate = new Date(dateString1);
+        var secondDate = new Date(dateString2);
+        if (firstDate < secondDate) {
+            return secondDate
+        }
+         else if (secondDate < firstDate) 
+         {
+            return firstDate
+        } 
+       
+    }
+    //29
+    function getYourAge() {
+        var dateString=prompt('enter your birthdate')
+        var birthdate = new Date(dateString);
+        var today= new Date();
+        var age =today.getFullYear()-birthdate.getFullYear();
+        if(
+            today.getMonth()<birthdate.getMonth()||
+        (today.getMonth() === birthdate.getMonth() &&
+        today.getDate() < birthdate.getDate())
+        )
+        {
+            age--;
+        }
+        return age;
+    }
+    //30
+    function getYourAgeIfBigger18() {
+        var dateString=prompt('enter your birthdate')
+        var birthdate = new Date(dateString);
+        var today= new Date();
+        var age =today.getFullYear()-birthdate.getFullYear();
+        if(
+            today.getMonth()<birthdate.getMonth()||
+        (today.getMonth() === birthdate.getMonth() &&
+        today.getDate() < birthdate.getDate())
+        )
+        {
+            age--;
+        }
+        if(age>18)
+        {
+            alert('get inside')
+        }
+        else{
+            alert('you can not get in')
+        }
+    }
+    // getYourAgeIfBigger18()
+    //31
+    function getYourPosition() {
+        var userDate = prompt("Type a Date in a MM/DD/YYYY  Format:");
+        var mydate= new Date(userDate)
+        var locationUser = mydate.toString().match(/\((.+)\)/)[1];
+        console.log("Parsed Date:", mydate);
+        console.log("Time Zone Offset:", locationUser);
+    }
+    // getYourPosition()
+    //32
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function randomDate() {
+        var month=getRandomInt(1990, 2022)
+        var day=getRandomInt(0, 11)
+        var year=getRandomInt(1, 31)
+        var randomcDate = new Date(year, month, day);
+        console.log(randomcDate);
+        return randomDate;
+    }
+    // randomDate()
+   //33
+   function makeItObject(strParam) {
+      var commaIndex=1;
+      var valueString;
+      var biggerValue=''; 
+      while (commaIndex>0) {  
+      var startIndex=strParam.indexOf(':');
+      commaIndex=strParam.indexOf(',');
+        if(commaIndex==-1)
+      {
+        valueString =strParam.substring(startIndex+1,strParam.length);
+      }
+      else{
+        valueString =strParam.substring(startIndex+1,commaIndex);
+        strParam=strParam.substring(commaIndex+1,(strParam.length));
+      }
+      if(valueString.length>biggerValue.length)
+      {
+        biggerValue=valueString;
+      }
+      } 
+      return biggerValue;  
+    }
+   var b=makeItObject('color:red,name:yizak,age:18,key:value')
+
+  //34
+  function getValuesForKey(strParam,keyUser) {
+    var myObject=makeObjectFromString(strParam);
+    return myObject[keyUser];
+  }
+  
+  var a=getValuesForKey('color:red,name:yizak,age:18,key:value','key')
+  // console.log(a);
+  //35
+  //function to make object from string
+  function makeObjectFromString(strParam1) {
+    var myObject={};
+    var colonIndex=strParam1.indexOf(':');
+    var commaIndex=strParam1.indexOf(',');
+    var key=strParam1.substring(0,colonIndex);
+    var value=strParam1.substring(colonIndex+1,commaIndex);
+    strParam1=strParam1.substring(commaIndex+1,strParam1.length)
+    myObject[key]=value;
+    while (commaIndex>0) {
+      colonIndex=strParam1.indexOf(':');
+      commaIndex=strParam1.indexOf(',');
+      key=strParam1.substring(0,colonIndex);
+      value=strParam1.substring(colonIndex+1,commaIndex);
+      strParam1=strParam1.substring(commaIndex+1,strParam1.length)
+      if(commaIndex==-1)
+      {
+        value=strParam1.substring(colonIndex+1,strParam1.length);
+      }
+      myObject[key]=value;
+    }
+    return myObject;
+  }
+  function getLengthAllKeys1(strParam2) {
+    var colonIndex=strParam2.indexOf(':');
+    var commaIndex=strParam2.indexOf(',');
+    var key=strParam2.substring(0,colonIndex);
+    var value=strParam2.substring(colonIndex+1,commaIndex);
+    var tempkey=key;
+    strParam2=strParam2.substring(commaIndex+1,strParam2.length)
+    while (commaIndex>0) {
+      colonIndex=strParam2.indexOf(':');
+      commaIndex=strParam2.indexOf(',');
+      key=strParam2.substring(0,colonIndex);
+      value=strParam2.substring(colonIndex+1,commaIndex);
+      strParam2=strParam2.substring(commaIndex+1,strParam2.length)
+      if(commaIndex==-1)
+      {
+        value=strParam2.substring(colonIndex+1,strParam2.length);
+      }
+      tempkey=tempkey+key
+    }
+    return tempkey.length;
+  }
+  var sstring='color:red,name:yizak,age:18,key:value';
+  var e=getLengthAllKeys1(sstring)
+  // console.log(e);
+  function getLengthAllKeys2(strParam) {
+    var MyObject=makeObjectFromString(strParam)
+    var key=Object.keys(MyObject)
+    var keyLength=0;
+    for (var i=0;i<key.length;i++)
+    {
+      keyLength=keyLength+key[i].length;
+    }
+    return keyLength;
+  }
+  
+  var g=getLengthAllKeys2(sstring)
+  // console.log(g);
+  //36
+  function getLengthAllValues1(strParam2) {
+    var colonIndex=strParam2.indexOf(':');
+    var commaIndex=strParam2.indexOf(',');
+    var key=strParam2.substring(0,colonIndex);
+    var value=strParam2.substring(colonIndex+1,commaIndex);
+    var tempValue=value;
+    strParam2=strParam2.substring(commaIndex+1,strParam2.length)
+    while (commaIndex>0) {
+      colonIndex=strParam2.indexOf(':');
+      commaIndex=strParam2.indexOf(',');
+      key=strParam2.substring(0,colonIndex);
+      value=strParam2.substring(colonIndex+1,commaIndex);
+      strParam2=strParam2.substring(commaIndex+1,strParam2.length)
+      if(commaIndex==-1)
+      {
+        value=strParam2.substring(colonIndex+1,strParam2.length);
+      }
+      tempValue=tempValue+value
+    }
+    return tempValue.length;
+  }
+  var vvv=getLengthAllValues1(sstring)
+  // console.log(vvv);
+  function getLengthAllValues2(strParam4) {
+    var MyObject=makeObjectFromString(strParam4)
+    var value=Object.values(MyObject)
+    var valueLength=0;
+    for (var i=0;i<value.length;i++)
+    {
+      valueLength=valueLength+value[i].length;
+    }
+    return valueLength;
+  }
+  var t=getLengthAllValues2(sstring)
+
+  // console.log(t);
+  //37
+  function isBigger5(sTrparams) {
+    if(sTrparams.length>5)
+    {
+      return 'long'
+    }
+    else{
+      return 'short'
+    }
+  }
+  //38
+  function ifaExsist(Strparam) {
+    for(var i=0;i<Strparam.length-1;i++)
+    {
+      if (Strparam[i]=='a') {
+        return i;
+      }
+    }
+    return console.log('not found');
+  }
+  // var example=ifaExsist('Strprm')
+  // console.log(example);
+  //39
+  function ifeExsist(Strparam) {
+    for(var i=0;i<Strparam.length-1;i++)
+    {
+      if (Strparam[i]=='e') {
+        return true;
+      }
+    }
+    return console.log('false');
+  }
+  //40
+  function ifTavExsist(Strparam,tav) {
+    for(var i=0;i<Strparam.length-1;i++)
+    {
+      if (Strparam[i]==tav) {
+        return true;
+      }
+    }
+    return console.log('false');
+  }
+  //41
+  function tavInString(tav,stringParam) {
+    for(var i=0;i<stringParam.length;i++)
+    {
+      if (tav==stringParam[i]) {
+        return console.log('the charat is in index:',i);
+      }
+    }
+    console.log('the charat isnt exsist');
+  }
+  
+  function tavInString1(tav,stringParam) {
+    var iLast=stringParam.indexOf(tav)
+    if (iLast==-1) {
+      return console.log('the charat isnt exsist');
+      
+    }
+    return console.log('the charat is in index:',iLast);
+  }
+  // tavInString1(' ','stringParam')
+  //42
+function get3tav() {
+  var str='sayonara'
+  return str.substr(0,3)
+}
+//45
+function get4tav() {
+  var str='sayonara'
+  return str.substr(0,4)
+}
+//46
+function get4tav() {
+  var str='sayonara'
+  i=str.indexOf('o')
+  return str.substr(i,str.length)
+}
+
+//47 48
+function name(stringg,index) {
+  if(index>stringg.length)
+  {
+    return console.log('the index too bigger');
+  }
+  return stringg.substr(index,stringg.length)
+}
+//49 50
+function name(stringg,index) {
+  if(index>stringg.length)
+  {
+    return console.log('the index too bigger');
+  }
+  return stringg.substr(index,3)
+}
+
+var i=name('stringg',5)
+// console.log(i);
+//51
+function getfromYourIndexs(sstring,i,j) {
+  i=Math.floor(i)
+  j=Math.floor(j)
+  return sstring.substr(i,j)
+}
+//52
+//like 43
+//54
+//like 45
+//55
+//like 46
+//56
+function checkName() 
+{
+  var nameUser=prompt('enter full name')
+  console.log(nameUser.length);
+  var r=nameUser.indexOf(' ')
+  if(r!=-1)
+  {
+    console.log('there is a revah in the name');
+    var private=nameUser.substr(0,r)
+    console.log(private);
+    var family=nameUser.substr(r,nameUser.length)
+    console.log(family);
+  }
+}
+//57
+function checkIfEqualLowerCase(srt1,srt2) {
+  srt1=srt1.toLowerCase()
+  srt2=srt2.toLowerCase()
+  if(srt1==srt2)
+  {
+    return console.log('they are equals');
+  }
+}
+//58
+function checkIfEqualUpperCase(srt1,srt2) {
+  srt1=srt1.toUpperCase()
+  srt2=srt2.toUpperCase()
+  if(srt1==srt2)
+  {
+    return console.log('they are equals');
+  }
+}
+//59
+function familtOrPRIVATEbigger() {
+  var nameUser=prompt('enter full name')
+  var r=nameUser.indexOf(' ')
+  var private=nameUser.substr(0,r)
+  var family=nameUser.substr(r,nameUser.length)
+  if (private>family) {
+    return console.log(private);
+  }
+  if (private<family) {
+    return console.log(family);
+  }
+}
+//60 62
+function checkInUserName() {
+  var fullName = prompt('Enter full name');
+  var spaceIndex = fullName.indexOf(' ');
+  var firstName = fullName.substring(0, spaceIndex);
+  var lastName = fullName.substring(spaceIndex + 1);
+
+  var lowercaseFirstName = firstName.toLowerCase();
+  var lowercaseLastName = lastName.toLowerCase();
+
+  var indexOfAInFirstName = lowercaseFirstName.indexOf('a');
+  var indexOfApiInLastName = lowercaseLastName.indexOf('api');
+
+  if (indexOfAInFirstName !== -1) {
+    console.log('There is an "a" in the first name.');
+  }
+
+  if (indexOfApiInLastName !== -1) {
+    console.log('There is "api" in the last name.');
+  }
+}
+//62
+function isBigger5(sTrparams) {
+    if(sTrparams.length>5)
+    {
+      return 'long'
+    }
+    else{
+      return 'short'
+    }
+  }
+  //63
+  function checkLengthCountry(country) {
+    if(country.length<3)
+    {
+      return console.log('yes');
+    }
+    return console.log('no');
+  }
+  //64
+  function checkIfStringMore6(stringparam,tav) {
+    if (stringparam.length>6) {
+      return stringparam
+    }
+    return stringparam.indexOf(tav)
+  }
+  //65
+  function checkIfStringMore6(stringparam,tav) {
+    charExsist=stringparam.indexOf(tav)
+    if (tav!=-1)
+    {
+      return charExsist
+    }
+    return stringparam
+  }
+  //66
+  function makeUserNameFormat() {
+    var userName=prompt('name')
+    var firstChar=userName.substr(0,1)
+    var spaceName=userName.indexOf(" ")
+    var lastName=userName.substr(spaceName,userName.length)
+    lastName= lastName.toUpperCase()
+    var format=firstChar+'. '+lastName
+    console.log(format);
+  }
+  //68
+function GetLastNaneBigger() {
+  var userName=prompt('name')
+  var spaceName=userName.indexOf(" ")
+  lastName1=userName.substr(0,spaceName)
+  lastName2=userName.substr(spaceName,userName.length)
+  if (lastName1>lastName2) {
+    console.log(lastName1);
+    console.log(lastName2.toLowerCase());
+  }
+  if (lastName1<lastName2) {
+    console.log(lastName2);
+    console.log(lastName1.toLowerCase());
+  }
+}
+// GetLastNaneBigger()
+//69
+function checkIfCharExsist(tav,name) {
+  var i=name.indexOf(tav)
+  if(i!=-1)
+  {
+    return i
+  }
+  console.log('the char isnt exsist');
+}
+//70
+function howMuchWordInName(name) {
+  var j=0;
+  var space=name.indexOf(' ')
+  for(var i=0;i<name.length;i++)
+  {
+    if(name[i]==" ")
+    {
+      j++
+    }
+  }
+  if(j==0)
+  {
+    var temp=name.substr(0,1)
+    temp=temp.toUpperCase()
+    name=name.substr(1,name.length)
+    name=temp+name
+    return name
+  }
+  if(j==1)
+  {
+    var array=[];
+    array[0]=name.substr(0,space)
+    array[1]=name.substr(space,name.length)
+    return array
+  }
+  if(j==2)
+  {
+    var first=name.substr(0,space)
+    var lastSpace=name.lastIndexOf(' ')
+    var middle=name.substr(space,lastSpace-space)
+    var last=name.substr(lastSpace,name.length)
+    console.log('first:',first," middle:",middle,' last:',last);
+  }
+}
+
+    </script>
+</body>
+</html>

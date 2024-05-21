@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        function SayHellowWorld() {
+            console.log('hello world');
+        }
+        //2
+        function SayMyName() {
+            console.log('yizak');
+        }
+        //3
+         function GetMyName() {
+            return 'yizak';
+        }
+        //4
+        GetMyName()
+        function SumThreeAndSevevn() {
+            return 7+3;
+        }
+        //5
+            function SumVariableSIxAndF() {
+            var six=6;
+            var four=4; 
+            return six+four;
+        }
+        //6
+        function getSum(num1,num2) {
+            return num1+num2;
+        }
+        //7
+        function innovation(num1,num2) {
+            return num1*num2;
+        }
+        //8
+        function getTheSpace(num1,num2) {
+            if(num1>num2)
+            {
+                return num1-num2
+            }
+                return num2-num1; 
+        }
+        //9
+        function GetHilok(num1,num2) {
+            if(num1>num2)
+            {
+                return num1/num2
+            }
+            else{
+                return num2/num1;
+            }
+        }
+        //10
+        function GetSUM2(num1,num2) {
+            return (+prompt())+(+prompt());
+        }
+       //11
+       function GetName() {
+        return prompt('enter name')
+       }
+       function GetAge() {
+            return +prompt('enter age')
+       }
+       function GetNameAndAge(GetName,GetAge) {
+           return console.log("your name"+GetName()+"your age"+GetAge());
+            
+       }
+        //12
+        function GetNum() 
+        {
+            return +prompt('enter number')
+        }
+        function GetSBiggest() {
+            var num =GetNum();
+            var min=num;
+            var max=num; 
+            num =GetNum();
+                if(num>max){
+                max=num;
+                }
+                if(num<min){
+                min=num;
+                }
+            return max;
+        }
+        //13
+        function GetSUM(GetNum,GetNum) {
+            return GetNum()+GetNum()    
+        }
+        //14
+        function GetSumOfTheSfarot(num=+prompt('enter num')) {
+            var sum=0;
+            for(var i=1;i<=num;i++)
+            {
+                sum=sum+i
+            }
+            return sum;
+        }
+        function GetSumOfTheSfarot2(num=+prompt('enter num')) {
+            for(var i=0;i!=1;i=i)
+            {
+                if(num>=0)
+                {
+                    var sum=0;
+                    for(var i=1;i<=num;i++)
+                    {
+                        sum=sum+i
+                    }
+                return sum;
+                }
+                else{
+                alert('the number is need to be positive')
+                }
+                num=+prompt('enter num')
+            }  
+        }
+        //15
+        function ChangeValues(num1,num2) {
+            return [num1,num2]=[num2,num1] 
+        }
+        //16
+        function drawTriangle(size) {
+            var triangle=""
+            var stars=""
+            for(var i=0;i<size;i++){
+                stars +="* "
+                triangle +=stars+ "\n"
+            }
+            console.log(triangle);
+        }
+        //17
+        function GetHellow(){
+            for(var i=1;i<=5;i++){
+                console.log('hellow');
+            }
+        }
+        //18
+        function GetMin(num1,num2) {
+            var min=num1;
+            if(num2<min)
+            {
+                min=num2;
+            }
+            return min;
+        }
+        //19
+        function GetMinFromThree(num1,num2,num3) {
+            var min=num1;
+            if(num2<min)
+            {
+                min=num2;
+            }
+            if(num3<min)
+            {
+                min=num3;
+            }
+            return min;
+        }
+        //20
+        function GetAVG(num1,num2,num3) {
+            return (num1+num2+num3)/3;
+        }
+        //21
+        function GetSum3(num1,num2,num3,num4) {
+            return num1+num2+num3+num4;
+        }
+        //22
+        function GetExponet(base,expont) {
+            return base**expont;
+        }
+        //23
+        function GetSumDivid(num) {
+            var s=num.toString().length;
+            var sum=0;
+            for(var i=0;i<s;i++)
+            {
+                sum=sum+(+s[i]);
+            }
+            return sum;   
+        }
+        //with Math.floor
+        function sumOFsfarot(num) {
+            var sum=0;
+            while (num>0) {
+                sum=sum+num%10;
+                num=Math.floor(num/10)
+            }
+            return sum;
+        }
+        
+        //commit about how to make string
+        var num=12355;
+        var w=num.toString().length
+        console.log(w);
+        var num2=num.toString()
+        console.log(num2[0]);
+        var b=+num2[0];
+        console.log(b+0);
+        //24
+        function Fibunachi(num){
+            var a=0;
+            var b=1;
+            var c=0;
+            for(var i=0;i<=num;i++)
+            {               
+                c=a+b
+                console.log(b);
+                [a,b]=[b,c];
+            }
+        }
+        //25
+        function NUMatLINE() {
+            for(var i=1;i<=100;i++){
+                console.log(i);
+            }
+        }
+        //26
+        function GetText(text=prompt('text')) {
+            for(var i=1;i<=10;i++){
+                console.log(text);
+            }
+            
+        }
+        //27
+        function getNUMgetTEXT(num=+prompt('num')) {
+            if(num>10)
+            {
+                for(var i=1;i<=num;i++)
+                {
+                    console.log('hellow');
+                }
+                
+            }else{
+                return num;
+            }
+           
+        }
+        //28
+        function GETtextANnum(num=+prompt('num'),text=prompt('text')) {
+            for(var i=1;i<=num;i++){
+                console.log(text);
+            }
+        }
+        //29
+        function GetFIVEnumGETsum() {
+            var sum=0
+            for(var i=1;i<=5;i++)
+            {
+                var num=+prompt('num')
+                sum=sum+num;
+            }
+            return sum
+        }
+        //30
+        function zogi(){
+            var num=+prompt('numbr');
+            for( var i=2;i<=50;i++)
+            {
+                if(i%2==0)
+                {
+                    console.log(i);
+                }
+            }
+        }
+        //31
+        function IFzogiPRINT() {
+            num=+prompt('number')
+            if(num%2==0){
+                for( var i=2;i<=50;i++)
+            {
+                if(i%2==0)
+                {
+                    console.log(i);
+                }
+            }  
+        }
+        else
+            for( var i=1;i<=50;i=i+3)
+            {
+                console.log(i);
+            }
+        }
+        //32
+        function SharitOFnum() {
+            num=+prompt('num')
+            for(var i=1;i<=num;i++){
+                if(num%i==0){
+                    console.log(i);
+                }
+            }
+            
+        }
+        //33
+        function AZERT() {
+                num=+prompt('num');
+                var aztert=1;
+                for(var i=1;i<=num;i++)
+                {
+                    aztert=aztert*i;
+                }
+                return aztert;
+        }
+        //34
+        function DONTenterNAME() {
+                var text=prompt('text');
+                var name=prompt('name')
+                if (text!=name) {
+                    console.log(name);
+                }
+        }
+        //35
+        function GETnum() {
+            num=+prompt('num');
+            for(var i=1;i<=10;i=i)
+               {
+                if(num>10)
+                {
+                    console.log('yes');
+                }
+                else if(num<10)
+                {
+                    console.log('no');
+                    i++;
+                }else {
+                    console.log('equal');
+                }
+                num=+prompt('num');
+                }
+            }
+            //36
+            function  GetMINandMAX()
+            {
+                var num = +prompt ('num1')
+                var b=num;
+                var s=num;
+                for(var i=1;i<=5;i++)
+                {
+                    num =+prompt('num');
+                    if(num>b){
+                    b=num;
+                    }
+                    else if(num<s){
+                    s=num;
+                    }
+                    
+                }
+                return "the smallest: "+s+"the biggest: "+b;
+
+            }
+            //37
+            function GETnameNOstartA() {
+                var name = prompt('enter name');
+        
+                for(var FirstLetter=name.charAt(0);FirstLetter!='A';)
+                {
+                console.log(FirstLetter);
+                console.log(name);
+                name = prompt('enter name');
+                FirstLetter=name.charAt(0);
+                }
+            }
+            //38
+            function  GETnameNOstartAa() {
+                for (var i=1;i!=2;) 
+                {
+                var name = prompt('enter nam5e');
+                if(name[0]=='A'||name[0]=='a'){
+                    i=2;
+                }
+                else{
+                    console.log(name[0]);
+                    console.log(name);
+                }
+                }
+            }
+            //40
+            function GETnimMAXuntilZERO() {
+                var num =+prompt('num');
+                var b=num;
+                var s=num;
+                if(num<=0)
+                    {
+                        i=0;
+                    }
+                for(var i=1;i!=0;)
+                {
+                    num =+prompt('num');
+                    if(num<=0)
+                    {
+                        i=0
+                    }
+                    else
+                    { 
+                    if(num>b){
+                        b=num;
+                    }
+                    else if(num<s){
+                        s=num;
+                    }
+                    } 
+                }
+                return "the smallest: "+s +" the biggest"+b;
+            }
+            //41
+            function GETnumbersOFnum() {
+                var num = prompt('num');
+                var len =num.length
+                console.log("the length"+len);
+                for(var i=0;i<len;i++)
+                {
+                    console.log(num[i]);
+                }
+            }
+            //42
+            function LOAHhakefel() {
+                for(var i=1;i<10;i++)
+                {
+                    for(var j=1;j<10;j++)
+                    {
+                        console.log(i*j);
+                    }
+                    j=1;
+                }
+            }
+            //43
+            function getCurrentTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            return `${hours}:${minutes}:${seconds}`;
+            }
+          
+
+
+            function GUESSnumGAME() {
+                var number = Math.floor(Math.random()*100)
+                console.log(number);
+                var user=+prompt('enter');
+                if(user>number)
+                {
+                    console.log('the num is bigger');
+                }
+                else if(user<number) 
+                {
+                    console.log('the num is smallest');
+                }
+                var startTime = new Date();
+                var i=1;
+                while(number!=user)
+                {    
+                var user=+prompt('enter');
+                if(user>number)
+                {
+                    console.log('the num is bigger');
+                }
+                else if(user<number) 
+                {
+                    console.log('the num is smallest');
+                }
+                i++
+                }
+            var endTime = new Date();
+            var timeDifference = endTime - startTime;
+            var seconds = Math.floor(timeDifference / 1000);
+            console.log("YOUR NUMBAR GUESS"+i);
+            console.log('you played: '+seconds+ ' seconds');
+            }
+    </script>
+</body>
+</html>

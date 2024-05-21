@@ -1,0 +1,14 @@
+#MyDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img{
+    width: 32vw;
+    height: 32vh;
+}
+#divForPrintObject{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

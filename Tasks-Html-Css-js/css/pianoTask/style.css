@@ -1,0 +1,47 @@
+.whitechords{
+    border: 1px solid rgb(255, 15, 203);
+    height: 100px;
+    width: 80%;
+    border-radius: 10px; 
+} 
+.whitechords:hover{
+    box-shadow: 10px 10px 5px rgb(0, 255, 255),inset 0 0 10px 0 rgb(255, 8, 8);
+}
+.letters{
+    float: right; 
+    margin-top: -70px; 
+    margin-right: 230px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+/* when you hover on the white chords the letter will show up */
+.whitechords:hover +.letters{
+    color: rgb(0, 0, 0);
+}
+
+
+    
+/* this is the black chords */
+section{
+    float: left;
+    margin-top: -45px;
+    background-color: rgb(0, 0, 0);
+    width: 60%;
+    height: 80px;
+    border-radius: 10px;
+   
+}
+/* when you hover on the clack chords the shadow will show up */
+section:hover{
+    box-shadow: 10px 10px 5px rgb(159, 160, 160),inset 0 0 10px 0 rgb(255, 255, 255);
+}
+
+   
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+.container{
+    display:flex ;
+    flex-direction: column;
+    height: 20vh;
+
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+div{
+    width: 100vw;
+    height: 10vh;
+}
+.hide{
+    width: 57vw ;
+    height: 2.5vh;
+    background-color: #ffffff;
+    transform: translate( 0px ,-73px);
+}
+.hide1{
+    transform: translate( 0px ,-73px);
+    animation: move 5s forwards ;
+
+}
+.hide2{
+    transform: translate( 0px ,-73px);
+    animation: move 5s 2s forwards;
+
+}
+.hide3{
+    transform: translate( 0px ,-73px);
+    animation: move 5s 5s forwards;
+
+}
+.hide4{
+    transform: translate( 0px ,-73px);
+    animation: move 5s 9s forwards;
+
+}
+@keyframes move {
+    from{
+        transform: translate( 0px ,-73px);
+    }
+    to{
+        transform: translate( 900px ,-73px);
+    }
+    
+}
+
+/* .text{
+    position: relative;
+    
+    
+}
+.p{
+    position:absolute ;
+}
+.t{
+    animation: typing 1s  ;
+    color: #000;
+}
+.y{
+    animation: typing 1s 1s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.p1{
+    animation: typing 1s 2s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.i{
+    animation: typing 1s 3s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.n{
+    animation: typing 1s 4s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.g{
+    animation: typing 1s 5s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.point1{
+    animation: typing 1s 6s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.point2{
+    animation: typing 1s 7s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+}
+.point3{
+    animation: typing 1s 8s  ;
+    animation-fill-mode: backwards;
+    color: #000000;
+} */
+@keyframes typing{
+    from{
+            color: rgb(255, 255, 255);
+    }
+    to{
+        color: #000000;
+    }
+    
+}

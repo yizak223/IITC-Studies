@@ -1,0 +1,24 @@
+header{
+    height: 10%;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+}
+footer{
+    height: 13%;
+    background-color: #000000;
+    color: #ff0000;
+}
+h2{
+    color: #ff0000;
+    text-shadow: 50px 10px;
+}
+.pargraphYellow{
+    color: rgb(249, 249, 9);
+}
+.pargraphPink{
+    color: rgb(248, 169, 182);
+}
+a{
+    text-decoration: none;
+    color: rgb(2, 162, 2);
+}

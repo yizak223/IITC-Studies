@@ -1,0 +1,9 @@
+body {
+    background-image: url(https://top-selfie.co.il/wp-content/uploads/2021/05/sunset-1373171.jpg);
+  }
+  
+  @media only screen and (max-width: 650px) {
+    body {
+      background-image: url(https://www.photo-art.co.il/wp-content/uploads/2015/07/BY1A5781.jpg);
+    }
+  }

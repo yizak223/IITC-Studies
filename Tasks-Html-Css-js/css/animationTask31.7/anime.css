@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    border: solid;
+    height: 100vh;
+    width: 98vw;
+    overflow-x: hidden;
+}
+.background{
+   z-index: 0;
+   height: 100%;
+   width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 10% 30%;
+    animation: imgmove 3s infinite ;
+}
+.man{
+    z-index: 100;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+
+}
+@keyframes imgmove{
+    from{
+        transform: translate(0px,0px);
+    }
+
+    to{
+        transform: translate(-200px);
+    }
+}

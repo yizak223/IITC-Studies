@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //70
+        var user={
+            namePravite:'yizak',
+            family:'alaluf',
+            age:23,
+            email:'yizak223@gmail.com',
+            id:1
+        }
+        console.log(user);
+        //71
+        var dog={
+            namePravite:'max',
+            gender:'male',
+            age:23,
+            type:'chiwawa',
+            id:2
+        }
+        console.log(dog);
+        //72
+        var car={
+            color:'red',
+            numberWhiles:4,
+            company:'volvo',
+            id:3
+        }
+        console.log(dog);
+        //73
+        console.log(user.namePravite);
+        //74
+        console.log(dog.age);
+        //75
+        console.log(car.color+car.company);
+        //76
+        function changeFamily() {
+            user.family=prompt()
+            console.log( user.family);
+            return user.family
+        }
+        // changeFamily()
+        //77
+        function changeType() {
+            dog.type=prompt()
+            console.log(dog.type);
+            return dog.type
+        }
+        // console.log(dog.type);
+        // changeType()
+        //78
+        function changeNumWiles() {
+            car. numberWhiles=prompt()
+            console.log(car.numberWhiles);
+            return car.numberWhiles
+        }
+        //79
+        function newValueUser() {
+            var selectUser=prompt('enter form')
+            user[selectUser]=prompt('enter new value');
+            console.log(user[selectUser]);
+            return user[selectUser]
+        }
+        // newValue()
+        //80
+        function changeValueDog() {
+            var selectUser=prompt('enter form')
+            dog[selectUser]=prompt('enter new value');
+            console.log(dog[selectUser]);
+            return dog[selectUser]
+        }
+        // changeValueDog()
+        //81
+        function changeValueCar() {
+            var selectUser=prompt('enter form')
+            car[selectUser]=prompt('enter new value');
+            console.log(car[selectUser]);
+            return car[selectUser]
+        }
+        //83
+        var array1=[user,dog,car]
+        console.log(array1);
+         console.log(array1[1].id);
+        function printId() {
+            for(var i=0;i<3;i++)
+            {
+                console.log(array1[i].id);
+            }
+        }
+        //86
+        function builtForms() {
+            var user1={
+            namePravite:prompt('enter name'),
+            family:prompt('enter family'),
+            age:+prompt('enter age'),
+            email:prompt('enter email'),
+            id:+prompt('enter id')
+            }
+            console.log(user1);
+        }
+        // builtForms()
+        //87
+        function dogBuilt() {
+            var dogsArray=[]
+            for(var i=0;i<3;i++)
+            {
+            var dogObject={
+            namePravite:prompt('enter name'),
+            gender:prompt('enter gender'),
+            age:+prompt('enter age'),
+            type:prompt('enter type'),
+            id:i
+            }
+            dogsArray.push(dogObject)
+        } 
+        console.log(dogsArray);
+        }
+        // dogBuilt()
+        //88
+        function builtObjects() {
+            var carsArray=[]
+            var num=+prompt('how much object?')
+            for(var i=0;i<num;i++)
+            {
+            var carsArray={
+            color:prompt('enter color'),
+            numberWhiles:prompt('enter numberWhiles'),
+            company:+prompt('enter company'),
+            id:i
+            }
+            carsArray.push(carsArray)
+        } 
+        console.log(carsArray);
+        }
+        //89
+        function builtForm() {
+            var myObject={}
+            for(var i=0;i<3;i++)
+            {
+                var form=prompt('enter form')
+                var value=prompt('enter value')
+                myObject[form]= value
+            }
+            return myObject;
+        }
+        // var myObject=builtForm()
+        // console.log(myObject);
+        //90
+        function createObjectsArray() {
+            var numObject=+prompt('enter number of tour object you want')
+            var arrayObject=[];
+            for(var j=0;j<numObject;j++)
+            {
+                    arrayObject.push(builtForm())
+            }
+        }
+
+    </script>
+</body>
+</html>

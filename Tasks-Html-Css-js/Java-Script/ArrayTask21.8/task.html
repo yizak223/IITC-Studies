@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrayColors= ['red','black','green','blue','yellow']
+        console.log(arrayColors[0]);
+        var nameArray=['moshe','yair','lili','dan','ben']
+        console.log(nameArray[2]);
+        var animalsArray=['kengero','cat','dog','lion','dolfin']
+        console.log(animalsArray[2]);
+        var citiesArrsy=['jerusalem','tlv','rehovot','ranna','ramat-gan']
+        console.log(citiesArrsy[1]);
+        console.log(arrayColors);
+        function CHANGEblueTOcolor(color) {
+            if(arrayColors[3]=='blue')
+            {
+                 arrayColors[3]=color;
+            }
+        }
+        CHANGEblueTOcolor('goodbye');
+        console.log(arrayColors);
+
+        var yearArray=[1990,1992,1993,1995,2000];
+        function PrintYearYEAR() {
+            for(var i=0;i<yearArray.length;i++)
+            {
+                console.log(yearArray[i]);
+            }
+        }
+        PrintYearYEAR()
+        function printAllYearsThatBiggerThan1999() {
+            for(var i=0;i<yearArray.length;i++)
+            {
+                if(yearArray[i]>1999)
+                {
+                    console.log("this year are bigger than '1999': "+yearArray[i]);
+                }
+            }
+        }
+        printAllYearsThatBiggerThan1999()
+        function IfTheNameExist(name) {
+            for(var i=0;i<nameArray.length;i++)
+            {
+                if(name==nameArray[i])
+                {
+                    console.log('the name exist');
+                    return;
+                }
+            }
+            console.log('not exsist');
+        }
+        IfTheNameExist('lili')
+
+        function IstheParmtrInTheArray(array,parmtr) {
+            for(var i=0;i<array.length;i++)
+            {
+                if(parmtr==array[i])
+                {
+                    console.log('the prmtr exist');
+                    return
+                }
+            }
+            console.log('not exsist');
+        }
+        IstheParmtrInTheArray(nameArray,'lili')
+
+        function builtArray() {
+            var array=[];
+            var numOfTheLength=+prompt('enter number that will be the length of the array')
+            for(var i=0;i<numOfTheLength;i++)
+            {
+                array[i]=+prompt('enter a num for:'+i+" cell")
+            }
+            console.log(array);
+        }
+        // builtArray() 
+
+
+        function builtArrayBiggerF10() {
+            var array=[];
+            var c=0;
+            var num=+prompt('enter num')
+            while (num>=10) {
+                array[c]=num;
+                c++
+                num=+prompt('enter num')
+            }
+            console.log(array);
+        }
+        // builtArrayBiggerF10()
+
+    </script>
+</body>
+</html>

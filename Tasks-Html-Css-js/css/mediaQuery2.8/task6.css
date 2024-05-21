@@ -1,0 +1,40 @@
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+img{
+    width: 32vw;
+}
+#img1:hover{
+    filter: grayscale(1);
+}
+#img2:hover{
+    filter: blur(10px);
+}
+#img3:hover{
+    filter:brightness(10%);
+}
+#img4:hover{
+    filter:invert(5)
+}
+#img5:hover{
+    filter:hue-rotate(30deg);
+}
+#img6:hover{
+    filter:contrast(10%);
+}
+#img7:hover{
+    filter:sepia(5);
+}
+
+@media screen and(max-width:600px) {
+    div{
+        flex-direction: column;
+    }
+}
+@media screen and(min-width:600px) {
+    div{
+       flex-direction: row;
+    }
+}

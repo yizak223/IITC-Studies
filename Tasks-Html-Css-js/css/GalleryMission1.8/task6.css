@@ -1,0 +1,65 @@
+body{
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    transform: translate(-200vw);
+}
+img{
+    width: 33.3vw;
+    height: 100vh;
+}
+.arrowR,.arrowL{
+    background-color: blue;
+    align-self: center;
+    font-size: 3vw;
+}
+
+.arrowL{
+    position: absolute;
+    top: 50vh;
+    z-index: 10;
+}
+.arrowR{
+    position: absolute;
+    top: 50vh;
+    z-index: 10;
+    left: 96vw;
+}
+.arrowR:hover ~main{
+    animation: slidetoright 5s ;
+}
+.arrowL:hover ~main{
+    animation: slidetoleft 5s ;
+}
+
+
+
+
+@keyframes slidetoleft{
+    0%{
+        transform: translate(-200vw);
+     
+    }
+    50%{
+        transform: translate(-300vw);
+    }
+    100%{
+        transform: translate(-400vw);
+    }
+
+}
+@keyframes slidetoright{
+    0%{
+        transform: translate(-200vw);
+     
+    }
+    50%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(0vw);
+    }
+
+}

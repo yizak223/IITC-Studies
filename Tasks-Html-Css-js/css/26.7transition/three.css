@@ -1,0 +1,11 @@
+#div3{
+    width: 20vw;
+    height: 50px;
+    background-color: red;
+    transition: all 3s;
+}
+#div3:hover{
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+}

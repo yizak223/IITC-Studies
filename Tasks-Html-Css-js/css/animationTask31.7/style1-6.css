@@ -1,0 +1,111 @@
+
+@keyframes change-color{
+    from{background-color:red ;};
+    to{background-color:blue ;};
+    }
+    .box1{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        animation-name: change-color;
+        animation-duration: 5s;
+    }
+    
+    
+    @keyframes change{
+        0%{background-color: green;}
+        25%{background-color: yellow;}
+        50%{background-color: pink;}
+        75%{background-color: red;}
+        100%{background-color: black;}
+    }
+    .box2{
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        animation-name: change;
+        animation-duration: 5s;
+    }
+    .circle{
+        margin-top: 20px;
+        height: 200px;
+        width: 100px;
+        
+        background-color: aqua;
+       animation: toSquare 5s alternate-reverse  infinite ease-in-out  ;
+        animation-timing-function: 0;
+    
+    }
+    @keyframes toSquare{
+        from{border-radius: 0;}
+        to{
+            border-radius: 50%;
+            
+        }
+    }
+    .circle4{
+        margin: 10px;
+        width: 100px;
+        margin: 10px;
+        height: 100px;
+        background-color: aquamarine;
+        border-radius: 100%;
+        animation: bigger 5s  infinite alternate-reverse ;
+    }
+    @keyframes bigger{
+        from{
+            height: 100px;
+            width: 100px;
+        }
+        to{
+            height: 300px;
+            width: 300px;
+        }
+    }
+    
+    .hvr{
+        margin: 10px;
+        width: 100px;
+        margin: 10px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+    
+    .hvr:hover{
+        animation: moveleft 5s   1 alternate-reverse ;
+    }
+    @keyframes moveleft{
+        from{
+            transform: translate(0px,0px);
+        }
+        to{
+            transform: translate(100px,0px);
+        }
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .move2{
+        margin: 10px;
+        width: 100px;
+        margin: 10px;
+        height: 100px;
+        background-color: rgb(33, 189, 33);
+        animation: move2 7s   2 alternate ;
+    }
+    
+    @keyframes move2{
+        0%{
+            transform: translate(0px,0px);
+        }
+        50%{
+            transform: translate(50px,0px); 
+        }
+        100%{
+            transform: translate(50px,50px);
+        }
+    }

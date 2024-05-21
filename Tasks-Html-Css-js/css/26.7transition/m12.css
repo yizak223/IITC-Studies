@@ -1,0 +1,14 @@
+div{
+    width: 300px;
+    height: 300px;
+    border: solid;
+  
+}
+div:hover{
+    animation: background-color  7s infinite;
+}
+@keyframes background-color{
+   0%{background-color: rgb(0, 255, 26);}
+   58%{background-color: rgb(255, 255, 0);}
+    100%{background-color: rgb(255, 0, 0);}
+}

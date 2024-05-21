@@ -1,0 +1,76 @@
+body{
+    overflow-x: hidden;
+}
+main{
+    margin-left: 50vh;
+    height: 40vw;
+    width: 100vh;
+    background-position: left,  center, right;
+    background-size: auto;
+    background-image: url(1spiderman-background.jpg) ,url(2spider-man-oposite.jpg) ,url(3spider-man&girlfriend.jpg);
+    background-size: 33% 100%,33% 100%,33% 100%;
+    background-repeat: no-repeat;
+}
+.arrowL{
+    height: fit-content;
+    width: fit-content;
+    font-size: 40px;
+    position: relative;
+    left: 40vh;
+    top:23vw;
+}
+.arrowR{
+    height: fit-content;
+    width: fit-content;
+    font-size: 40px;
+    position: relative;
+    left:   160vh;
+    top: 20vw;
+} 
+.arrowL:hover ~main{
+    background-image: url(1spiderman-background.jpg) ,url(2spider-man-oposite.jpg) ,url(3spider-man&girlfriend.jpg);
+    animation: slide 10s forwards;
+}
+.arrowR:hover ~main{
+    background-image: url(1spiderman-background.jpg) ,url(2spider-man-oposite.jpg) ,url(3spider-man&girlfriend.jpg);
+    animation: slide 10s forwards;
+}
+@keyframes slide{
+    0%{
+        background-image: url(1spiderman-background.jpg) ,url(2spider-man-oposite.jpg) ,url(3spider-man&girlfriend.jpg);
+    }
+    33%{
+        background-image: url(4spiderman-hang.jpg) ,url(5fight-spiderman.webp) ,url(6jump-spiderman.jpg);
+    }
+    66%{
+        background-image: url(7on-the-air-spiderman.jpg) ,url(8spiderman-sit.jpeg) ,url(9three-spiderman.jpg);
+    }
+}
+
+/* .image1{
+    height: 60vh;
+    width: 30vw;
+    background-image: url(4spiderman-hang.jpg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.image2{
+    background-color: rgb(255, 19, 19);
+    height: 60vh;
+    width: 20vw;
+    background-image: url(1spiderman-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image3{
+    background-color: rgb(255, 19, 19);
+    height: 60vh;
+    width: 20vw;
+    background-image: url(7on-the-air-spiderman.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+} */
+

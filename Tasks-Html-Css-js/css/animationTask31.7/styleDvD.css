@@ -1,0 +1,47 @@
+body{
+    position: relative;
+    border: solid;
+    height: 98vh;
+    width: 99vw;
+    overflow-y: hidden;
+}
+.dvd{
+    position: absolute;
+    font-size: 10vh;
+    color: blue;
+    animation: DVD 5S  infinite;
+}
+@keyframes DVD{
+    0%{
+        transform: translate(0);
+        color: blue;
+    }
+    25%{
+        transform: translate(900px,580px);
+        color: blue;
+    }
+    25.2%{
+        transform: translate(900px,580px);
+       color: blueviolet;
+    }
+    50%{
+        transform: translate(1350px,400px);
+        color: blueviolet;
+    }
+    50.2%{
+        transform: translate(1350px,400px);
+        color: rgb(0, 255, 30);
+    }
+    75%{
+        transform: translate(200px,-80px);
+        color: rgb(0, 255, 30);
+    }
+    75.2%{
+        transform: translate(200px,-80px);
+        color: rgb(255, 0, 0);
+    }
+    99%{
+        transform: translate(0);
+        color: rgb(255, 0, 0);
+    }
+}

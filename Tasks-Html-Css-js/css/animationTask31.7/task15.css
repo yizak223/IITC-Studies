@@ -1,0 +1,67 @@
+body{
+    background-image: url('https://img.mako.co.il/2012/07/30/vlcsnap-2012-07-30-15h40m39s131_c.jpg') ;
+    background-size: cover;
+    position: relative;
+}
+.man1{
+    position: absolute;
+    top: 20vw;
+    animation: fightToRight 4s  3s  forwards;
+    
+}
+@keyframes fightToRight{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 60vh;
+    }
+    20%{
+        left: 0;
+    }
+    60%{
+        left: 0;
+        transform: rotate(0);
+    }
+    61%{
+        left: 0;
+        transform: rotate(-90);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+
+
+.man2{
+    position: absolute;
+    top: 15vw;
+    left: 60vh;
+    animation: fightToLeft 4s 3s ;
+    animation-fill-mode: forwards;
+}
+@keyframes fightToLeft{
+    0%{
+        top: 15vw;
+        left: 60vh;
+    }
+    15%{
+        left: 80vh;
+    }
+    20%{
+       top: 10vw;
+    }
+    25%{
+        left: 70vh;
+        bottom: 10vw;
+
+    }
+    40%{
+        left: 10vh;
+        bottom: 10vw;
+    }
+    100%{
+        left: 10vh;
+        bottom: 10vw;
+    }
+}

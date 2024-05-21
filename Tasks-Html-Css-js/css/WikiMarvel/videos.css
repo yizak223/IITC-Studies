@@ -1,0 +1,129 @@
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+h1{ 
+    color: #f4aaaa;
+    text-align: center;
+}
+.title-trailer{
+    background-color: #331dac81;
+    color: #ff0000;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+section{
+    padding-top: 3vh;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+}
+.container-videos{
+    display: flex;
+    flex-direction: row;
+}
+.video{
+    display: flex;
+    justify-content: space-around;
+    width: 33vw;
+    height: 35vh;
+}
+.trailer-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    padding: 3vh 4vh 10vh 4vh;
+    border-radius: 5%;
+}
+.avengers .trailer-card{
+     background-color: rgba(60, 112, 233, 0.633);
+}
+.deadpool .trailer-card{
+    background-color: rgba(199, 233, 60, 0.633);
+}
+.cptAmerica .trailer-card{
+    background-color: rgba(38, 206, 32, 0.666);
+    
+}
+.Ironman .trailer-card{
+    background-color: rgba(231, 59, 32, 0.633);
+    
+}
+.spiderman .trailer-card{
+    background-color: rgba(72, 71, 71, 0.633);
+}
+.trailer-card p{
+    border: solid rgb(57, 57, 57);
+    background-color: #ff0000;
+    transition: 0.5s;
+    padding: 1.5vh;
+    border-radius: 3px;
+    align-self: center;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+.trailer-card p:hover{
+    color: #ff0000;
+    background-color: #ffffff;
+}
+iframe{
+    box-shadow: 5px 5px 10px 2px #000;
+}
+.the-main-title{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+@media screen and (max-width:600px) {
+body{
+    grid-template-rows: 10vh 180vh 185vh 180vh 10vh;
+}
+main{
+    height: 545vh;
+    background-size: 100% 545vh;
+}
+section{
+    flex-direction: column;
+}
+.container-videos{
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+    justify-content: space-between;
+}
+.container-videos-spiderman{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trailer-card{
+    padding-bottom: 0vh;
+
+}
+.title-trailer{
+    width: 100vw;
+}
+}
+@media screen and (min-width:601px) {
+    body{
+        grid-template-rows: 20vh 80vh 100vh 100vh 20vh;
+    }
+    main{
+        height: 280vh;
+        background-size: 100% 280vh;
+    }
+    section{
+        flex-direction: row;
+    }
+    .container-videos{
+        flex-direction: row;
+    }
+}

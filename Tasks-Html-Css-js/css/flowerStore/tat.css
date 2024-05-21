@@ -1,0 +1,15 @@
+table{
+    display: table;
+    border-collapse:separate ;
+    
+    border: solid;
+}
+thead{
+    border: solid;
+}
+th{
+    border: solid;
+}
+td{
+    border: solid;
+}

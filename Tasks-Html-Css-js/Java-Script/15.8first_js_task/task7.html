@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num =+prompt('enter number');
+        var num2=3;
+        if(num<=1){
+            num2=0;
+            alert('num is not Prime number1')
+        }
+        else if(num%2==0 && num!=2){
+            num2=0
+            alert('num is not Prime number2')
+        }
+        else if(num%3==0 && num!=3){
+            num2=0;
+            alert('num is not Prime number3')
+        }
+        // else if(num/5!=0 && num!=5){
+        //     num2=0;
+        //     alert('num is not Prime number4')
+        // }
+        else{
+            num2=1;
+            alert('num is Prime number')
+        }
+        console.log(num2);
+        // if(num%2!=0 || num%3!=0 || num>1 || num==2 ){
+        //     alert('num is  Prime number ')
+        // }
+        // else{
+        //     alert('num is not Prime number ')
+        // }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "beginning-typescript-workshop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently --raw \"npm run build-slides:*\"",
+    "build-slides:00": "marp --html 00-*/README.md",
+    "build-slides:01": "marp --html 01-*/README.md",
+    "build-slides:02": "marp --html 02-*/README.md",
+    "build-slides:03": "marp --html 03-*/README.md",
+    "build-slides:04": "marp --html 04-*/README.md",
+    "build-slides:05": "marp --html 05-*/README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "concurrently": "^8.2.2"
+  }
+}

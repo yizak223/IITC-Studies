@@ -1,0 +1,125 @@
+body{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 25% 25% 25% 25% ;
+    /* overflow-x: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    grid-area: header;
+    background-color: rgb(0, 0, 255);
+    width: 100vw;
+    height: 25vh;
+}
+.sidebar{
+    grid-area: sidebar;
+    width: 25vw;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    color: #000;
+}
+a:hover{
+
+    font-size: 5vh;
+    text-shadow: 15px 15px 15px rgb(135, 39, 39);
+}
+header:hover{
+    background-color: rgb(82, 82, 231);
+}
+img{
+    width: 5vw;
+    height: 10vh;
+}
+main{
+    grid-area: main;
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+
+    
+}
+.flower-card{
+    border: solid;
+    width: 24vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.flower-card:hover{
+    animation: toCircle 2s;
+}
+@keyframes toCircle {
+    from{
+        border-radius: 0%;
+    }
+    to{
+        border-radius: 100%;
+    }
+    
+}
+.one img:hover{
+    filter: blur(5px);
+}
+.two img:hover{
+    filter: brightness(5);
+}
+.three img:hover{
+    filter: contrast(5%);
+}
+.four img:hover{
+    filter: invert(55);
+}
+.five img:hover{
+    filter: grayscale(46);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(0, 0, 255);
+    width: 100vw;
+    height: 25vh;
+}
+footer:hover{
+    background-color: rgb(82, 82, 231);
+}
+@media screen and (max-width:600px) {
+    body{
+        grid-template-areas:
+        'header header header header'
+        'main main main main'
+        'main main main main'
+        'footer footer footer footer'  ;
+    }
+        main{
+        flex-direction: column;
+     
+    }
+
+    
+}
+@media screen and (min-width:600px) {
+    body{
+        grid-template-areas:
+        'header header header header'
+        'sidebar main main main'
+        'sidebar main main main'
+        'footer footer footer footer'  ;
+    }
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    
+}

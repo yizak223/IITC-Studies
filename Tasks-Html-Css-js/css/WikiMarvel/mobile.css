@@ -1,0 +1,13 @@
+
+body{
+    grid-template-rows: 10vh 190vh 200vh 190vh 10vh;
+}
+main{
+    height: 590vh;
+    background-image: url(images/GFX-Background.jpg);
+    background-size: 390vw;
+    background-repeat: repeat;
+}
+.movie-card img{
+    width: 50vw;
+}

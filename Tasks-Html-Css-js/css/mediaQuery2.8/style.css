@@ -1,0 +1,18 @@
+body{
+    background-color: blue;
+}
+@media screen and (max-width:600px ) {
+    body{
+        background-image: url(https://cdn.xxl.thumbs.canstockphoto.co.il/%D7%99%D7%95%D7%9D-%D7%90%D7%96-%D7%99%D7%A2%D7%A8-%D7%A0%D7%95%D7%A3-beautiful-%D7%90%D7%99%D7%95%D7%A8-%D7%A1%D7%98%D7%95%D7%A7_csp73179868.jpg);
+    }
+}
+
+@media screen and (min-width:601px ) {
+    body{
+        background-color: red;
+    }
+}
+div{
+    height: 30vh;
+    width: 20vw;
+}

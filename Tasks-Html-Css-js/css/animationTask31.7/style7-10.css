@@ -1,0 +1,103 @@
+
+
+.moveAround{
+    margin: 10px;
+    width: 100px;
+    margin: 10px;
+    height: 100px;
+    background-color: rgb(33, 189, 33);
+    animation: around 7s   infinite  ;
+}
+@keyframes around{
+    0%{
+        transform: translate(0px,0px);
+    }
+    25%{
+        transform: translate(1400px,0px); 
+    }
+    50%{
+        transform: translate(1400px,617px);
+    }
+    75%{
+        transform: translate(0px,617px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+  
+}
+
+.rotate{
+   position: absolute;
+   top: 200px;
+    width: 100px;
+    margin: 10px;
+    height: 100px;
+    background-color: rgb(33, 189, 33);
+    animation: inside 5s   infinite ;
+}
+
+@keyframes inside{
+    from{
+        transform: rotateX(0);
+
+    }
+    to{
+        transform: rotateX(150deg);
+    }
+}
+img{
+    width: 15vw;
+    animation: falling 2s infinite  ;
+}
+.ball{
+    height: 10vw;
+    width: 10vh;
+    filter: drop-shadow(5px 5px 5px black);
+}
+@keyframes falling{
+    from{
+        transform: translate(0px,0px);
+        filter: drop-shadow(5px 5px 5px black);
+    }
+    to{
+        transform: translate(0px,180px);
+        height: 150px;
+        width: 150px;
+        filter: drop-shadow(30px 30px 30px black);
+        transform: scale(5);
+    }
+    /* 40%{
+        transform: translate(0px,150px);
+        height: 200px;
+        width: 200px;
+    }
+    60%{
+        transform: translate(0px,100px);
+        height: 250px;
+        width: 250px;
+    }
+    80%{
+        transform: translate(0px,80px);
+    }
+    100%{
+        transform: translate(0px,50px);
+        height: 260px;
+        width: 260px; */
+    }
+
+
+.textRising{
+    font-size: 30px;
+    text-shadow: 0 0 10px red, 0 0 20px orange, 0 0 30px yellow, 0 0 40px green, 0 0 50px blue;
+    animation: rising 5s infinite;
+
+}
+@keyframes rising{
+    from{
+        font-size: 30px;
+    }
+    to{
+        font-size: 50px;
+    }
+}

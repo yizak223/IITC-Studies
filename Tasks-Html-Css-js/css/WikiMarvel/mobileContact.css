@@ -1,0 +1,38 @@
+body{
+    grid-template-rows: 10vh 45vh 20vh 10vh 10vh;
+}
+main{
+    height: 75vh;
+    
+}
+@keyframes move {
+    from{
+        transform: rotate(-90deg) translate(5vh,60vh);
+    }
+    to{
+        transform: rotate(-90deg) translate(5vh, -5vh);
+    }
+    
+}
+#MarvelGif{
+    display: none;
+}
+#spiderManGif{
+    display: block;
+    transform: rotate(-90deg) translate(5vh,60vh);
+    animation: move 5s forwards;
+}
+section{
+    width: 45vw;
+}
+input, textarea{
+    width: 40vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img-and-details{
+    align-self: center;
+}

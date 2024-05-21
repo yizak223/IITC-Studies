@@ -1,0 +1,43 @@
+.container{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+.div1{
+    border: solid;
+    background-color: aqua;
+    width: 30%;
+    height: 60px;
+    
+    
+}
+.div2{
+    border: solid;
+    background-color: aqua;
+    width: 30%;
+    height: 60px;
+    
+}
+.div3{
+    border: solid;
+    background-color: aqua;
+    width: 30%;
+    height: 60px;
+    
+}
+.div4{
+    border: solid;
+    background-color: aqua;
+    width: 30%;
+    height: 60px;
+    
+}
+.div5{
+    border: solid;
+    background-color: aqua;
+    width: 30%;
+    height: 60px;
+    
+}

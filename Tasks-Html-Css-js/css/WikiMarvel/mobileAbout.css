@@ -1,0 +1,7 @@
+body{
+    grid-template-rows: 10vh 20vh 50vh 60vh 10vh;
+}
+main{
+    height: 130vh;
+    background-size: 100% 130vh;
+}

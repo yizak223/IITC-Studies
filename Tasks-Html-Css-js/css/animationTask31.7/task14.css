@@ -1,0 +1,30 @@
+body{
+    background-image: url('wood.webp');
+    
+}
+.man{
+    position: relative;
+    top: 100px;
+    left:  1550px;
+    animation: move 2s backwards alternate;
+}
+@keyframes move{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 350px;
+    }
+    40%{
+        left: 650px;
+    }
+    60%{
+        left: 950px;
+    }
+    80%{
+        left: 1200px;
+    }
+    100%{
+        left: 1500px;
+    }
+}

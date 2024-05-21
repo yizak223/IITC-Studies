@@ -1,0 +1,20 @@
+p{
+    text-align: justify;
+}
+.hebrew{
+    text-align: right;
+}
+.b{
+   
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+.f{
+    z-index: 0;
+     width: 100px;
+      height: 100px; 
+      position: relative;
+      right: 100px;
+}
